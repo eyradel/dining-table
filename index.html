@@ -1,0 +1,408 @@
+<html>
+<head>
+    <script src="js/aframe.min.js"></script>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    </head>
+
+
+
+<body>
+    <a-scene>
+       <a-camera position="10 6 19"
+                  cursor-visible="true"
+                  cursor-scale="2"
+                  cursor-color="#0095dd"
+               cursor-opacity="1.5"></a-camera>
+         
+      
+        <a-entity
+                  position="0 0 0"
+                  
+                  >
+        
+        <a-box
+               
+               src="img/glass.jpg"
+               position="0 0 0"
+               rotation="90 180 360"
+               depth="0.1"
+               width="7"
+               height="7"
+            open-ended="false">
+            
+            
+            
+            
+            </a-box>
+            <a-box
+               
+               src="img/wood-texture-cover2.jpg"
+               position="0 -0.3 0"
+               rotation="90 180 360"
+               depth="0.2"
+               width="10"
+               height="10"
+            open-ended="true">
+            
+            
+            
+            
+            </a-box>
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                        depth="0.5"
+                        position="-4 -5 -5"
+                        height="10"
+                        rotation="180 90 360"
+                        depth="-5"
+                        width="5"
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+        <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                        depth="-5"
+                        position="-4 -5 5"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+        
+        <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                        depth="0.5"
+                        position="4 -5 5"
+                        height="10"
+                        rotation="180 90 360"
+                        depth="-5"
+                        width="5"
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                        depth="0.5"
+                        position="4 -5 -5"
+                        height="10"
+                        rotation="180 90 360"
+                        depth="-5"
+                        width="5"
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+               <a-box
+               
+               src="img/wood-texture-cover2.jpg"
+               position="0 -9.4 0"
+               rotation="90 180 360"
+               depth="0.6"
+               width="10"
+               height="10"
+            open-ended="true">
+            
+            
+            
+            
+            </a-box>
+        </a-entity>
+    
+   
+          <a-assets>
+    <img id="texture" src="img/milo1.png">
+               <img id="milk" src="img/ideal.jpg">
+               <img id="floor" src="img/tile2.png">
+               <img id="floor-n" src="img/tile.png">
+  </a-assets>
+
+  <a-cylinder src="#texture"
+              depth="-1"
+              width="-1"
+              height="2"
+              position="0 1 -2"
+              
+              
+              ></a-cylinder>
+        
+        
+        <a-cylinder src="#milk"
+              depth="-1.5"
+              width="-1"
+              height="2"
+              position="0 1 2"
+                    radius="0.7"
+              
+              
+              ></a-cylinder>
+        
+        
+        <!---chair--->
+    
+    <a-entity
+              position="0 -1 -1.5 "
+              
+              
+              >
+        <a-box
+                  src="img/wood-texture-cover2.jpg"
+                  position="10 -1 2"
+                  rotation=" 180 180 0"
+                  depth="5"
+                  
+               width="5"
+               height="0.4"
+                  
+                  
+                  >
+            <!-----leg----->
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                       radius="0.4"
+                        position="-2.4 5 2.05"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                       radius="0.4"
+                        position="-2.4 5 -2.05"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+            <!----leg--->
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                       radius="0.4"
+                        position="2.2 5 2.05"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+        <!----leg--->
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                       radius="0.4"
+                        position="2.2 5 -2.05"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            <!----chair head---->
+            </a-cylinder>
+                           <a-cylinder
+                  src="img/wood-texture-cover2.jpg"
+                  position="-2.6 -3.4 -0.01"
+                  rotation=" 90 90 0"
+                height="0.3"
+                  radius="4"
+                                       
+                                    
+                    
+                  
+                  
+                  >
+                               
+                               
+        
+
+        </a-cylinder>
+            
+            
+            
+        </a-box>
+        
+        
+        
+       
+        </a-entity>
+    
+    
+    
+        <!---chair2--->
+        <a-entity
+              position="-20 -1 -1.5 "
+              
+              
+              >
+        <a-box
+                  src="img/wood-texture-cover2.jpg"
+                  position="10 -1 2"
+                  rotation=" 180 180 0"
+                  depth="5"
+                  
+               width="5"
+               height="0.4"
+                  
+                  
+                  >
+            <!-----leg----->
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                       radius="0.4"
+                        position="-2.1 5 2.05"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                       radius="0.4"
+                        position="-2.1 5 -2.05"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+            <!----leg--->
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                       radius="0.4"
+                        position="2.2 5 2.05"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            
+            </a-cylinder>
+        <!----leg--->
+            <a-cylinder
+                        src="img/wood-texture-cover2.jpg"
+                       radius="0.4"
+                        position="2.2 5 -2.05"
+                        height="10"
+                        rotation="180 90 360"
+                        width="5"
+                        
+                        
+                        >
+            
+            
+            <!----chair head---->
+            </a-cylinder>
+                           <a-cylinder
+                  src="img/wood-texture-cover2.jpg"
+                  position="2.6 -3.4 -0.01"
+                  rotation=" 90 90 0"
+                height="0.3"
+                  radius="4"
+                  
+                  >
+                           </a-cylinder>
+            
+            
+            
+        </a-box>
+        
+        
+        
+       
+        </a-entity>
+    
+    
+        
+        
+    
+    <a-plane
+             material="color:#ffffff;
+                       src:#floor-n;
+                       normal-map:#floor-n;
+                       normal-texture-repeat:5 5;
+                       repeat: 50 50"
+             rotation="-90 0 0"
+             scale="5 5 0"
+             position="0 -10 0"
+             width="80"
+             height="80"
+             
+             
+             >
+        
+        
+        
+        
+        </a-plane>
+    <a-sky
+          src="img/fantasy-sky_90839-278.jpg"
+           
+           >
+        
+        
+        
+        
+        </a-sky>
+    
+    </a-scene>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+</html>
